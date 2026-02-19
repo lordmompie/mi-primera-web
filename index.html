@@ -28,11 +28,22 @@
   </ul>
 </section>
 
-   <section>
+  <section>
   <h2>Contacto</h2>
   <a href="https://www.google.com">Ir a Google</a>
-  <br><br>
-  <button id="ahorrar">Ahorrar</button>
+
+  <h3>Total ahorrado:</h3>
+  <p id="total">0</p>
+
+  <button onclick="ahorrar()">Ahorrar</button>
 </section>
+
+<script>
+  let total = 0;
+
+  function ahorrar() {
+    total++;
+    document.getElementById("total").textContent = total;
+  }
   </div>
 </body>
